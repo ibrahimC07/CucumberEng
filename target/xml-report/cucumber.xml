@@ -1,2 +1,57 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.669"/>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="231.252">
+    <testcase classname="Google_Search" name=": TC01_outline_search" time="35.288">
+        <system-out>
+            <![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "mercedes" on the google..............................passed
+Then verify the page title contains "mercedes"..............................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Google_Search" name=": TC01_outline_search 2" time="35.727">
+        <system-out>
+            <![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "tesla" on the google.................................passed
+Then verify the page title contains "tesla".................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Google_Search" name=": TC01_outline_search 3" time="22.403">
+        <system-out>
+            <![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "toyota" on the google................................passed
+Then verify the page title contains "toyota"................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Google_Search" name=": TC01_outline_search 4" time="26.218">
+        <system-out>
+            <![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "toros" on the google.................................passed
+Then verify the page title contains "toros".................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Google_Search" name=": TC01_outline_search 5" time="22.072">
+        <system-out>
+            <![CDATA[Given user opens the URL "https://www.google.com"...........................passed
+Given user search for "opel" on the google..................................passed
+Then verify the page title contains "opel"..................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="FE341_US3412_login_with_customer_credentials" name="TC01_login_with_customer" time="88.209">
+        <system-out>
+            <![CDATA[Given user tries to login as "customer".....................................passed
+Then verify the login is successful.........................................passed
+Then capture the screenshot.................................................passed
+Then close the application..................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

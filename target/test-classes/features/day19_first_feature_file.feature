@@ -1,5 +1,5 @@
 
-@google_search
+@google_search @smoke_test
 Feature: Search Feature
 
   Background: User_goes_to_google

@@ -1,6 +1,6 @@
 Feature: FE341_US3412_login_with_customer_credentials
 
-  @customer_excel
+  @customer_excel @regression_tests
   Scenario: TC01_login_with_customer
 
     Given user tries to login as "customer"

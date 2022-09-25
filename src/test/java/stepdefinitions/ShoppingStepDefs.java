@@ -1,6 +1,6 @@
 package stepdefinitions;
 
-import com.github.javafaker.Faker;
+
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
@@ -38,7 +38,7 @@ public class ShoppingStepDefs {
     public void enter_name_as_and_email_as_and_click_on_sign_up_button(String name, String email) {
 
         signUpLoginPage.nameBox.sendKeys(name);
-        signUpLoginPage.emailBox.sendKeys(Faker.instance().internet().emailAddress());
+        signUpLoginPage.emailBox.sendKeys(email);
         signUpLoginPage.signUpButton.click();
 
 
