@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="35.474">
+    <testcase classname="FE3425_Reservation_Feature" name="TC01_Reservation_Creation" time="34.732">
+        <system-out>
+            <![CDATA[Given user opens the URL "https://www.bluerentalcars.com/"..................passed
+When user navigate the login page...........................................passed
+And user enters manager_username and manager_password.......................passed
+Then verify the login is successful.........................................passed
+And capture the screenshot..................................................passed
+Given user is on the home page..............................................passed
+And select a car model "Maserati"...........................................passed
+And enter pick up field.....................................................passed
+And enter drop off field....................................................passed
+And Enter pick up date......................................................passed
+And Enter drop off date.....................................................passed
+And click continue reservation..............................................passed
+And verify complete reservation screen pops up..............................passed
+And enter card number.......................................................passed
+And enter name on the card..................................................passed
+And enter expire date and CVC...............................................passed
+And checks the agreement....................................................passed
+And click complete reservation..............................................passed
+Then verify "Reservation created successfully" pop up.......................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 25, 2022 12:24:23 AM</span></a>
+<a href="#"><span class="badge badge-primary">Sep 28, 2022 07:45:08 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 25, 2022 12:24:23 AM</h3>
+<h3>Sep 28, 2022 07:45:08 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 25, 2022 12:25:55 AM</h3>
+<h3>Sep 28, 2022 07:45:45 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>19</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"FE341_US3412_login_with_customer_credentials":90.379
+"FE3425_Reservation_Feature":34.465
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@customer_excel</td>
+<td>@reservation_creation</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +213,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 19,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@customer_excel</a>
+<a class="dropdown-item" href="#">@reservation_creation</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">FE341_US3412_login_with_customer_credentials</p>
+            <p class="name">FE3425_Reservation_Feature</p>
             <p class="text-sm">
-              <span>12:24:25 AM</span> / <span>00:01:30:379</span>
+              <span>7:45:10 PM</span> / <span>00:00:34:465</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">FE341_US3412_login_with_customer_credentials</h5>
-<span class='badge badge-success'>09.25.2022 12:24:25 AM</span>
-<span class='badge badge-danger'>09.25.2022 12:25:55 AM</span>
-<span class='badge badge-default'>00:01:30:379</span>
+<h5 class="test-status text-pass">FE3425_Reservation_Feature</h5>
+<span class='badge badge-success'>09.28.2022 7:45:10 PM</span>
+<span class='badge badge-danger'>09.28.2022 7:45:44 PM</span>
+<span class='badge badge-default'>00:00:34:465</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,13 +274,25 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_login_with_customer</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC01_Reservation_Creation</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.ExcelStepDefs.user_tries_to_login_as(java.lang.String)">
-                <span>Given user tries to login as "customer"</span>
+              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_opens_the_url(java.lang.String)">
+                <span>Given user opens the URL "https://www.bluerentalcars.com/"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page()">
+                <span>When user navigate the login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.user_enters_manager_username_and_manager_password(io.cucumber.datatable.DataTable)">
+                <span>And user enters manager_username and manager_password</span>
+      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>customer@bluerentalcars.com</td><td>12345</td></tr></table>
+      </div>
       <div>
       </div>
               </div>
@@ -290,12 +302,77 @@ eventsCount: 5,
       </div>
               </div>
               <div class="step pass-bg" title="stepdefinitions.ReusableStepDefs.capture_the_screenshot()">
-                <span>Then capture the screenshot</span>
+                <span>And capture the screenshot</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.close_the_application()">
-                <span>Then close the application</span>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.user_is_on_the_home_page()">
+                <span>Given user is on the home page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.selectACarModel(java.lang.String)">
+                <span>And select a car model "Maserati"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_pick_up_field()">
+                <span>And enter pick up field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_drop_off_field()">
+                <span>And enter drop off field</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_pick_up_date()">
+                <span>And Enter pick up date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_drop_off_date()">
+                <span>And Enter drop off date</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.click_continue_reservation()">
+                <span>And click continue reservation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.verify_complete_reservation_screen_pops_up()">
+                <span>And verify complete reservation screen pops up</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_card_number()">
+                <span>And enter card number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_name_on_the_card()">
+                <span>And enter name on the card</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.enter_expire_date_and_cvc()">
+                <span>And enter expire date and CVC</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.checks_the_agreement()">
+                <span>And checks the agreement</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.click_complete_reservation()">
+                <span>And click complete reservation</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.AppReservationStepDefs.verifyPopUp(java.lang.String)">
+                <span>Then verify "Reservation created successfully" pop up</span>
       <div>
       </div>
               </div>
@@ -327,12 +404,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@customer_excel</p>
+<p class="name">@reservation_creation</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@customer_excel</h4>
+<h4>@reservation_creation</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -346,11 +423,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>00:24:25 AM</td>
+<td>19:45:10 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC01_login_with_customer</a>
+<a href="#" class="linked" test-id='1' id='2'>TC01_Reservation_Creation</a>
 <div class="">
-<span class="badge badge-default">FE341_US3412_login_with_customer_credentials.TC01_login_with_customer</span>
+<span class="badge badge-default">FE3425_Reservation_Feature.TC01_Reservation_Creation</span>
 </div>
 </td>
 </tr>

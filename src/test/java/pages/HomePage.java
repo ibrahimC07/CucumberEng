@@ -25,6 +25,31 @@ public class HomePage {
     @FindBy(xpath = "//*[@name='car']")
     public WebElement selectACar;
 
+    @FindBy(xpath = "//input[@name='pickUpLocation']")
+    public WebElement pickUpPlace;
+
+    @FindBy(xpath = "//input[@name='dropOfLocation']")
+    public WebElement dropOffPlace;
+
+    @FindBy(xpath = "//input[@name='pickUpDate']")
+    public WebElement pickUpDate;
+
+    @FindBy(xpath = "//input[@name='dropOffDate']")
+    public WebElement dropOffDate;
+
+    @FindBy(xpath = "//input[@name='pickUpTime']")
+    public WebElement pickUpTime;
+
+    @FindBy(xpath = "//input[@name='dropOffTime']")
+    public WebElement dropOffTime;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement continueReservationButton;
+
+    @FindBy(xpath = "//div[@class='modal-title h4']")
+    public WebElement completeReservationScreenText ;
+
+
     //    In Page Object Model, we can create important core methods
 //    For example, in the HomePage, we can create a method that click the login link
 //    This is not mandatory, you can do this in step definitions
