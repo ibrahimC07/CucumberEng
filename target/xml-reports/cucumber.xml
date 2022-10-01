@@ -1,45 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="27.181">
-    <testcase classname="Medunna_Test" name="Medunna_Room_Manipulation" time="26.262">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.704">
+    <testcase classname="db_customer_information" name="TC01_read_customer_ssn_info" time="2.977">
         <system-out>
-            <![CDATA[Given user opens the URL "https://medunna.com"..............................passed
-Then verify the page title contains "MEDUNNA"...............................passed
-Then capture the screenshot.................................................passed
-Given Sign in as Admin with username "adminrecep" and password "123Recep"...passed
-When Click on Items&Titles button...........................................passed
-And Click on Room button....................................................passed
-And Click on Create a new Room button.......................................passed
-Then Verify Create or edit a Room text......................................passed
-When Enter the room number as "99579" in the room number box................passed
-And Clear the room number...................................................passed
-And Click on Room Type dropdown.............................................passed
-Then Verify This field is required..........................................passed
-When Enter the room number as "99579" in the room number box................passed
-Then Verify 5 room types exist in Room Type dropdown........................passed
-When Click on Status Checkbox...............................................passed
-Then Verify that checkbox is selected.......................................passed
-When Send price as "1234" to price box......................................passed
-And Clear the price box.....................................................passed
-And Click on Description box................................................passed
-Then Verify This field is required..........................................passed
-When Send price as "1234" to price box......................................passed
-And Send description as "Medunna Room" to the Description box...............passed
-And Clear the Description box...............................................passed
-And Click on price..........................................................passed
-Then Verify that This field is required is not displayed....................passed
-When Click on first view button.............................................passed
-Then Verify Room header.....................................................passed
-When Click on back button...................................................passed
-Then Verify there are 20 view buttons.......................................passed
-When Click on Edit Button...................................................passed
-And Change the Description..................................................passed
-And Click on save button....................................................passed
-Then Verify The room is updated.............................................passed
-When Click on Created Date to sort rooms from newest to oldest..............passed
-And Click on first delete button............................................passed
-And Click on Delete button on alert.........................................passed
-Then Verify A room is Deleted message.......................................passed
-Then close the application..................................................passed
+            <![CDATA[Given user connects to the application database.............................passed
+And user gets the column "*" from table "tp_customer".......................passed
+And user reads all of the column "ssn" data.................................passed
+Then user close the connection..............................................passed
 ]]>
         </system-out>
     </testcase>
