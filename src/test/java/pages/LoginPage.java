@@ -9,10 +9,10 @@ public class LoginPage {
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(id="formBasicEmail")
+    @FindBy(xpath = "//input[@id='formBasicEmail']")
     public WebElement username;
 
-    @FindBy(id = "formBasicPassword")
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
     public WebElement password;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -21,6 +21,9 @@ public class LoginPage {
     @FindBy(xpath = "//*[text()='invalid credentials']")
     public WebElement invalidCredentialsError;
 
-    @FindBy(xpath = "//*[text()='email must be a valid email']")
-    public WebElement invalidEmailError;
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    public WebElement errorMessage;
+
+    @FindBy(xpath = "//*[@name='car']")
+    public WebElement selectACar;
 }

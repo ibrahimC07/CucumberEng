@@ -20,7 +20,7 @@ public class AppLoginStepDefs {
     public void user_navigate_the_login_page() {
 //        homePage.homeLoginButton.click();
 //        OR CALL THE READY METHOD THAT CLICK ON THE LOGIN LINK
-        homePage.clickOnLoginLink();
+        homePage.clickLoginLink();
     }
     @When("user enters username as {string} and password as {string} and click on login button")
     public void user_enters_username_as_and_password_as_and_click_on_login_button(String username, String password) {
