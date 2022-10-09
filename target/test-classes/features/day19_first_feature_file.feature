@@ -18,6 +18,15 @@ Feature: Search Feature
     Then close the application
 
 
+  Scenario: TC02_iphone_search
+
+    When user search for samsung on google
+    Then verify the page title contains iPhone
+    Then close the application
+
+
+
+
 #  Create GoogleStepDefs and write JAVA Code
 #  When you write JAVA code use page object model
 #  For that, in pages, create GooglePage class and locate the google page objects

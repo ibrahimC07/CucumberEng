@@ -71,4 +71,8 @@ public class GoogleStepDefs {
         Assert.assertTrue(false);
     }
 
+    @When("user search for samsung on google")
+    public void userSearchForSamsungOnGoogle() {
+        googlePage.searchBox.sendKeys("samsung"+ Keys.ENTER);
+    }
 }
